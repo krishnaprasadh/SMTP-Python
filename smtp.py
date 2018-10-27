@@ -1,9 +1,6 @@
 import smtplib
 server=smtplib.SMTP('smtp.gmail.com',587)
 server.starttls() #TLS-Trasport Layer Security
-print "#" * 50
-print "Python SMTP"
-print "#" * 50
 username=raw_input("Enter your gmail username (Without @): ")
 password=raw_input("Enter your password: ")
 server.login(username,password)
